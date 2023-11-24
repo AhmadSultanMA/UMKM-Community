@@ -19,7 +19,7 @@ function App() {
           <Route element={<Layout />}>
             <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/acara" element={<Acara />} />
-            <Route exact path="/komunitas" element={<Komunitas />} />
+            <Route exact path="/komunitas/*" element={<Komunitas />} />
             <Route exact path="/pemasaran" element={<Pemasaran />} />
             <Route exact path="/produk" element={<Produk />} />
             <Route exact path="/profile" element={<Profile />} />

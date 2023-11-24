@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CardKomunitas = ({ data }) => {
+const CardUntukAndaKomunitas = ({ data }) => {
   const { title, description, subscribers, img, link } = data;
 
   return (
@@ -50,4 +50,4 @@ const CardKomunitas = ({ data }) => {
   );
 };
 
-export default CardKomunitas;
+export default CardUntukAndaKomunitas;
