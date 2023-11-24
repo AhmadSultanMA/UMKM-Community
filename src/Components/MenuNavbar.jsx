@@ -7,22 +7,22 @@ const MenuNavbar = () => {
                 <div className="col-span-10 flex text-sm justify-center items-center">
                     <Link 
                     to={"/dashboard"}
-                    className="px-16 hover:underline transition-all duration-150 py-2 border-e-2 border-white">
+                    className="px-4 sm:px-8 md:px-12 lg:px-16 text-xs md:text-base hover:underline transition-all duration-150 py-2 border-e-2 border-white">
                        KOMUNITAS 
                     </Link>
                     <Link 
                     to={"/dashboard"}
-                    className="px-16 hover:underline transition-all duration-150 py-2 border-e-2 border-white">
+                    className="px-4 sm:px-8 md:px-12 lg:px-16 text-xs md:text-base hover:underline transition-all duration-150 py-2 border-e-2 border-white">
                        ACARA 
                     </Link>
                     <Link 
                     to={"/dashboard"}
-                    className="px-16 hover:underline transition-all duration-150 py-2 border-e-2 border-white">
+                    className="px-4 sm:px-8 md:px-12 lg:px-16 text-xs md:text-base hover:underline transition-all duration-150 py-2 border-e-2 border-white">
                        PEMASARAN 
                     </Link>
                     <Link 
                     to={"/dashboard"}
-                    className="px-16 hover:underline transition-all duration-150 py-2 border-e-2 border-white">
+                    className="px-4 sm:px-8 md:px-12 lg:px-16 text-xs md:text-base hover:underline transition-all duration-150 py-2 border-e-2 border-white">
                        TIPS 
                     </Link>
                 </div>

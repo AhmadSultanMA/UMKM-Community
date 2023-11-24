@@ -6,11 +6,11 @@ import shop from "../Assets/shop.svg";
 
 const HandleHeader = ({ defaultHeader = "general" }) => {
   return (
-    <div className="bg-cust-primary400 py-8">
+    <div className="bg-cust-primary400 py-4 md:py-8">
       {defaultHeader == "general" && (
         <div className="cust-container flex justify-center gap-40 text-cust-primary900 font-semibold">
-          <Link className="hover:underline text-sm">Untuk Anda</Link>
-          <Link className="hover:underline text-sm">Riwayat</Link>
+          <Link className="hover:border-b-2 transition-all duration-100 pb-2 text-sm">Untuk Anda</Link>
+          <Link className="hover:border-b-2 transition-all duration-100 pb-2 text-sm">Riwayat</Link>
         </div>
       )}
 
