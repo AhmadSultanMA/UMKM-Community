@@ -41,7 +41,6 @@ const UntukAndaKomunitas = () => {
           } -translate-y-4 border-cust-primary900`}
         >
           <h3 className="font-bold text-cust-primary900 py-2">UMKM</h3>
-          <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
               {dataCheckBox.map((item, index) => {
                 return (
@@ -59,7 +58,6 @@ const UntukAndaKomunitas = () => {
                 );
               })}
             </div>
-          </div>
         </motion.div>
       </div>
       <div className="col-span-10 flex flex-col gap-3">
