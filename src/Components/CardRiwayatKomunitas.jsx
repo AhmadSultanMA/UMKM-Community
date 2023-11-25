@@ -12,7 +12,7 @@ const CardRiwayatKomunitas = ({ data }) => {
       <div className="border-2 grid grid-cols-12 gap-5 px-5 py-3 bg-[#DBF2F2] border-cust-primary900 overflow-hidden rounded-md md:rounded-none">
         <div className=" lg:col-span-1 hidden lg:flex items-start">
           <img
-            src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700795716/Group_202_4_p0urwx.png"
+            src={img}
             className="w-full"
             alt=""
           />
@@ -20,7 +20,7 @@ const CardRiwayatKomunitas = ({ data }) => {
         <div className="col-span-12 lg:col-span-11 flex flex-col gap-2 text-cust-primary900">
           <div className="flex gap-4 items-center">
             <img
-              src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700795716/Group_202_4_p0urwx.png"
+              src={img}
               className="w-14 sm:w-20 h-14 sm:h-20 lg:hidden"
               alt=""
             />
