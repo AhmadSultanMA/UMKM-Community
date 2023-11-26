@@ -4,13 +4,27 @@ import { Link } from "react-router-dom";
 import search from "../Assets/search.svg";
 import shop from "../Assets/shop.svg";
 
-const HandleHeader = ({ defaultHeader = "general" }) => {
+const HandleHeader = ({ defaultHeader = "general", open = true, setOpen }) => {
   return (
-    <div className="bg-cust-primary400 py-8">
+    <div className="bg-cust-primary400 py-4 md:py-8">
       {defaultHeader == "general" && (
         <div className="cust-container flex justify-center gap-40 text-cust-primary900 font-semibold">
-          <Link className="hover:underline text-sm">Untuk Anda</Link>
-          <Link className="hover:underline text-sm">Riwayat</Link>
+          <button
+            onClick={() => setOpen(true)}
+            className={`hover:border-b-2 transition-all duration-100 pb-2 text-sm
+            ${open && "border-b-2"}
+            `}
+          >
+            Untuk Anda
+          </button>
+          <button
+            onClick={() => setOpen(false)}
+            className={`hover:border-b-2 transition-all duration-100 pb-2 text-sm
+            ${!open && "border-b-2"}
+            `}
+          >
+            Riwayat
+          </button>
         </div>
       )}
 
