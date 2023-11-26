@@ -31,6 +31,9 @@ export default {
         "cust-secondary200": "#64CCC5",
         "cust-secondary100": "#A6E0DC",
         "cust-secondary50": "#DBF2F2",
+
+        "cust-gray": "#373737",
+        "cust-yellow": "#FF9900",
       },
     },
   },

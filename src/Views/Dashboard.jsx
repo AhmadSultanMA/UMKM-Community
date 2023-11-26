@@ -1,7 +1,15 @@
+import Acara from "../Components/Dashboard/Acara";
+import Jenis from "../Components/Dashboard/Jenis";
+import Landing from "../Components/Dashboard/Landing";
+import Pemasaran from "../Components/Dashboard/Pemasaran";
+
 const Dashboard = () => {
   return (
     <>
-      <div>ini Dashboard</div>
+      <Landing />
+      <Jenis />
+      <Acara />
+      <Pemasaran />
     </>
   );
 };
