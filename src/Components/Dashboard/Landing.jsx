@@ -10,11 +10,11 @@ const Landing = () => {
           style={{ backgroundImage: `url(${backgroundDashboard})` }}
         >
           <div className="w-6/12 xl:mt-12 lg:mt-6 h-fit">
-            <div className="xl:w-9/12 lg:w-11/12 ml-auto xl:mr-16 py-12">
+            <div className="lg:w-11/12 ml-auto py-12">
               <div className="xl:text-5xl text-3xl font-bold mb-4">
                 UMKM - Community
               </div>
-              <div className="text-justify xl:text-base lg:text-sm">
+              <div className="text-justify xl:text-base lg:text-xs">
                 UMKM-Community adalah sebuah platform digital yang berdedikasi
                 untuk mendukung pertumbuhan dan perkembangan Usaha Mikro, Kecil,
                 dan Menengah (UMKM) di Indonesia. Didirikan sebagai respons atas

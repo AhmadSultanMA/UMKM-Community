@@ -62,7 +62,7 @@ const data = [
 const Pemasaran = () => {
   return (
     <>
-      <div className="lg:h-screen bg-cust-secondary200 pt-12 font-poppins lg:pb-0 pb-10">
+      <div className=" bg-cust-secondary200 pt-12 font-poppins pb-10">
         <div className="hidden lg:block w-fit mx-auto text-4xl font-bold text-black">
           Pemasaran Produk
         </div>
