@@ -72,7 +72,7 @@ const Barang = () => {
 
   return (
     <>
-      <div className="mx-auto w-11/12 md:mt-10 mt-5 font-poppins">
+      <div className="mx-auto w-11/12 md:mt-10 mt-5 font-poppins pb-10">
         <div className="mx-auto w-11/12 flex justify-between">
           <div className="relative md:w-4/12 w-6/12">
             <div

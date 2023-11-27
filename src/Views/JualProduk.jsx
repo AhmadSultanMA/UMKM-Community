@@ -24,7 +24,7 @@ const JualProduk = () => {
   };
   return (
     <>
-      <div className="w-11/12 mx-auto border-2 border-black font-poppins mt-10">
+      <div className="w-11/12 mx-auto border-2 border-black font-poppins my-10">
         <div className="border-b-black border-b-2 flex pl-10 py-5 bg-cust-primary200">
           <FaChevronCircleLeft className="my-auto mr-3 " size="20px" />
           <div className="font-bold text-lg">Jual Produk</div>

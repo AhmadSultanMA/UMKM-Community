@@ -74,7 +74,7 @@ const Produk = () => {
   }
   return (
     <>
-      <div className="w-10/12 mx-auto font-poppins md:pt-20 pt-10">
+      <div className="w-10/12 mx-auto font-poppins md:pt-20 py-10">
         <div className="w-full md:flex">
           <div className="md:w-4/12 ">
             <div className="carousel carousel-center w-full">
