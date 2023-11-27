@@ -17,6 +17,8 @@ function App() {
       <Router>
         <Routes>
           <Route element={<Layout />}>
+            <Route exact path="/" element={<Dashboard />} />
+
             <Route exact path="/acara" element={<Acara />} />
             <Route exact path="/komunitas/*" element={<Komunitas />} />
             <Route exact path="/pemasaran" element={<Pemasaran />} />
@@ -28,7 +30,6 @@ function App() {
 
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/register" element={<Register />}></Route>
-          <Route exact path="/" element={<Dashboard />} />
         </Routes>
       </Router>
     </>

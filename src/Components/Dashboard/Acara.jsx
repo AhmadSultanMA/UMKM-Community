@@ -85,7 +85,7 @@ const Acara = () => {
           dan keterampilan bisnis.
         </div>
 
-        <div className="carousel carousel-center rounded-box w-full">
+        <div className="carousel md:carousel-center carousel-start w-full">
           {data.map((index, i) => (
             <div
               className="xl:w-3/12 lg:w-4/12 w-[300px] mx-auto carousel-item py-2"

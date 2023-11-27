@@ -80,7 +80,7 @@ const Pemasaran = () => {
           mereka secara bersamaan. Fitur pemasaran produk ini juga memungkinkan
           anggota komunitas untuk membeli bahan baku dari sesama pelaku UMKM.
         </div>
-        <div className="carousel carousel-center rounded-box w-full">
+        <div className="carousel  md:carousel-center carousel-start w-full">
           {data.map((item, i) => (
             <div className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item">
               <div
