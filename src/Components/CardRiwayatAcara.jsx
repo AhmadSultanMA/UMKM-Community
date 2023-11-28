@@ -4,7 +4,7 @@ import clock from "../assets/clock.svg";
 
 import { Link } from "react-router-dom";
 
-const CardRiwayatKomunitas = ({ data }) => {
+const CardRiwayatAcara = ({ data }) => {
   const { title, date, img, tag, description, lokasi, waktu, jam, link } = data;
 
   return (
@@ -73,4 +73,4 @@ const CardRiwayatKomunitas = ({ data }) => {
   );
 };
 
-export default CardRiwayatKomunitas;
+export default CardRiwayatAcara;

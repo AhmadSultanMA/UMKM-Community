@@ -40,9 +40,9 @@ const MenuNavbar = () => {
                     </Link>
                 </div>
                 <div className="col-span-2 flex justify-end">
-                    <div className="h-12 rounded-full">
+                    <Link to={"/profile"} className="h-12 rounded-full cursor-pointer">
                         <img src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700668435/Rectangle_152_ocl4ks.png" className="h-full aspect-square" alt="profile" />
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
