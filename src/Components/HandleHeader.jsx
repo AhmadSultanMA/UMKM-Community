@@ -1,14 +1,17 @@
 // defaultHeader = general || search || pemasaran
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import search from "../Assets/search.svg";
 import shop from "../Assets/shop.svg";
 
 const HandleHeader = ({ defaultHeader = "general", open = true, setOpen }) => {
+
+  const location = useLocation();
+
   return (
     <div className="bg-cust-primary400 py-4 md:py-8">
       {defaultHeader == "general" && (
-        <div className="cust-container flex justify-center gap-40 text-cust-primary900 font-semibold">
+        <div className="cust-container w-full flex justify-evenly text-cust-primary900 font-semibold">
           <button
             onClick={() => setOpen(true)}
             className={`hover:border-b-2 transition-all duration-100 pb-2 text-sm
@@ -23,7 +26,9 @@ const HandleHeader = ({ defaultHeader = "general", open = true, setOpen }) => {
             ${!open && "border-b-2"}
             `}
           >
-            Riwayat
+            {
+              location.pathname == "/komunitas" ? "Komunitas Anda" : "Riwayat"
+            }
           </button>
         </div>
       )}
