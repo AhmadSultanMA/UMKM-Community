@@ -3,7 +3,7 @@ const Section0 = ({ dataProfile }) => {
 
   return (
     <>
-    <div className="flex flex-col col-span-8 lg:col-span-7">
+    <div className="flex flex-col col-span-1 md:col-span-8 lg:col-span-7">
       <div className="col-span-3 h-fit lg:hidden flex flex-col gap-5 justify-center items-center p-2">
         <img
           src="https://res.cloudinary.com/dr0lbokc5/image/upload/v1700668435/Rectangle_152_ocl4ks.png"

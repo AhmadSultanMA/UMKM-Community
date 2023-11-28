@@ -5,7 +5,7 @@ const Section3 = ({ dataAlamat }) => {
   const { alamat, provinsi, kota, kecamatan } = dataAlamat;
 
   return (
-    <div className="col-span-8 lg:col-span-10 bg-[#EEEEEE]">
+    <div className="col-span-1 md:col-span-8 lg:col-span-10 bg-[#EEEEEE]">
       <div className="px-3 md:px-10 flex items-center gap-3 py-5 bg-[#51839F]">
         <Link
           to={"/profile"}
