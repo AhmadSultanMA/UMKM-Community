@@ -1,7 +1,28 @@
+import { Link } from "react-router-dom";
 import gambar from "../../assets/acaraLanding.svg";
+import bazarRakyat from "../../assets/bazarRakyat.svg";
+import seminar from "../../assets/seminar.jpg";
+import webinar from "../../assets/webinar.svg";
 
 const data = [
   {
+    image: bazarRakyat,
+    header: "Bazar Merdeka",
+    agenda: "Kuliner",
+    tanggal: "07/Mei/2023",
+    jam: "15.30 - 17.00",
+    kota: "Jogja",
+  },
+  {
+    image: gambar,
+    header: "Bazar UMKM",
+    agenda: "Otomotif",
+    tanggal: "07/Mei/2023",
+    jam: "15.30 - 17.00",
+    kota: "Malang",
+  },
+  {
+    image: gambar,
     header: "Bazar Ramadhan",
     agenda: "Kuliner",
     tanggal: "07/Mei/2023",
@@ -9,60 +30,20 @@ const data = [
     kota: "Bandung",
   },
   {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
+    image: seminar,
+    header: "Seminar",
+    agenda: "Sosialisasi BNN",
     tanggal: "07/Mei/2023",
     jam: "15.30 - 17.00",
-    kota: "Bandung",
+    kota: "Padang",
   },
   {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
+    image: webinar,
+    header: "Webinar",
+    agenda: "Pelatihan Bisnis",
     tanggal: "07/Mei/2023",
     jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
-  },
-  {
-    header: "Bazar Ramadhan",
-    agenda: "Kuliner",
-    tanggal: "07/Mei/2023",
-    jam: "15.30 - 17.00",
-    kota: "Bandung",
+    kota: "Banjarmasin",
   },
 ];
 
@@ -87,12 +68,17 @@ const Acara = () => {
 
         <div className="carousel md:carousel-center carousel-start w-full">
           {data.map((index, i) => (
-            <div
+            <Link
+              to="/login"
               className="xl:w-3/12 lg:w-4/12 w-[300px] mx-auto carousel-item py-2"
               key={i}
             >
               <div className="w-10/12 mx-auto bg-gray-300 p-3 rounded-2xl shadow-lg">
-                <img src={gambar} alt="" className="mx-auto w-10/12" />
+                <img
+                  src={index.image}
+                  alt="missing"
+                  className="mx-auto w-10/12"
+                />
                 <div className="font-bold text-lg mx-auto w-fit py-2">
                   {index.header}
                 </div>
@@ -110,7 +96,7 @@ const Acara = () => {
                 </div>
                 <div className="w-fit mx-auto font-bold">{index.kota}</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

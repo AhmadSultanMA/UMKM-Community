@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import backgroundDashboard from "../../assets/backgroundDashboard.png";
 import gambar from "../../assets/gambarDashboardLanding.jpg";
 
@@ -25,9 +26,11 @@ const Landing = () => {
                 produk dan pengembangan mereka.
               </div>
               <div className="mt-4 w-fit">
-                <button className="text-white py-2 px-6 font-bold bg-cust-gray rounded-full">
-                  Daftarkan dirimu sekarang!
-                </button>
+                <Link to="/login">
+                  <button className="text-white py-2 px-6 font-bold bg-cust-gray rounded-full">
+                    Daftarkan dirimu sekarang!
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -40,8 +43,8 @@ const Landing = () => {
       </div>
       <div className="lg:hidden bg-gradient-to-b from-cust-secondary100 to-cust-secondary200 font-poppins pt-16">
         <div className="w-10/12 mx-auto">
-          <div className="text-5xl font-bold">UMKM</div>
-          <div className="text-5xl font-bold mt-2">Community</div>
+          <div className="text-3xl font-bold">UMKM</div>
+          <div className="text-3xl font-bold mt-2">Community</div>
           <div className="text-justify mt-8">
             UMKM-Community adalah sebuah platform digital yang berdedikasi untuk
             mendukung pertumbuhan dan perkembangan Usaha Mikro, Kecil, dan
@@ -52,10 +55,13 @@ const Landing = () => {
             sebagai alat untuk mengatasi masalah pemasaran produk dan
             pengembangan merek.
           </div>
+
           <div className="mt-12 w-fit mx-auto md:pb-0 pb-20">
-            <button className="text-white py-2 px-6 font-bold bg-cust-gray rounded-full">
-              Daftarkan dirimu sekarang!
-            </button>
+            <Link to="/login">
+              <button className="text-white py-2 px-6 font-bold bg-cust-gray rounded-full">
+                Daftarkan dirimu sekarang!
+              </button>
+            </Link>
           </div>
         </div>
       </div>

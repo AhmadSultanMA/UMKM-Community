@@ -3,9 +3,14 @@ import { useState } from "react";
 import chevron from "../../assets/chevron.svg";
 import search from "../../assets/search.svg";
 import kemeja from "../../assets/kemejaPemasaran.svg";
+import tempe from "../../assets/tempe.svg";
+import kain from "../../assets/kain.svg";
+import tepung from "../../assets/tepung.svg";
+import { Link } from "react-router-dom";
 
 const data = [
   {
+    image: kemeja,
     category: "Fashion",
     item: "Kemeja Oversized",
     price: "Rp. 32.000",
@@ -14,6 +19,34 @@ const data = [
     city: "Surabaya, Jawa Timur",
   },
   {
+    image: tempe,
+    category: "Kuliner",
+    item: "Keripik Tempe",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: kain,
+    category: "Fashion",
+    item: "Kain Katun",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: tepung,
+    category: "Kuliner",
+    item: "Tepung Terigu",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: kemeja,
     category: "Fashion",
     item: "Kemeja Oversized",
     price: "Rp. 32.000",
@@ -22,40 +55,9 @@ const data = [
     city: "Surabaya, Jawa Timur",
   },
   {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
+    image: tempe,
+    category: "Kuliner",
+    item: "Keripik Tempe",
     price: "Rp. 32.000",
     rprice: " Rp. 40.000",
     dics: "20%",
@@ -164,15 +166,20 @@ const Barang = () => {
           <div className="text-2xl font-bold mb-10">Produk Terbaik</div>
           <div className="carousel  md:carousel-center carousel-start w-full">
             {data.map((item, i) => (
-              <div className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item">
-                <div
-                  className="w-10/12 mx-auto bg-cust-primary200 rounded-2xl shadow-lg pb-5 border-2 border-black"
-                  key={i}
-                >
+              <Link
+                to="/produk"
+                className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item"
+                key={i}
+              >
+                <div className="w-10/12 mx-auto bg-cust-primary200 rounded-2xl shadow-lg pb-5 border-2 border-black">
                   <div className="w-fit bg-cust-primary400 lg:py-4 py-2 lg:px-12 px-8 font-bold text-black border-b-black border-r-black border-b-2 border-r-2 rounded-tl-2xl rounded-br-2xl">
                     {item.category}
                   </div>
-                  <img src={kemeja} alt="" className="w-10/12 mx-auto py-5" />
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="w-10/12 mx-auto py-5"
+                  />
                   <div className="w-10/12 mx-auto font-bold">{item.item}</div>
                   <div className="flex w-10/12 mx-auto justify-between pt-2">
                     <div className="w-fit">
@@ -189,21 +196,26 @@ const Barang = () => {
                     {item.city}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-2xl font-bold my-10">Rekomendasi</div>
           <div className="carousel  md:carousel-center carousel-start w-full">
             {data.map((item, i) => (
-              <div className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item">
-                <div
-                  className="w-10/12 mx-auto bg-cust-primary200 rounded-2xl shadow-lg pb-5 border-2 border-black"
-                  key={i}
-                >
+              <Link
+                to="/produk"
+                className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item"
+                key={i}
+              >
+                <div className="w-10/12 mx-auto bg-cust-primary200 rounded-2xl shadow-lg pb-5 border-2 border-black">
                   <div className="w-fit bg-cust-primary400 lg:py-4 py-2 lg:px-12 px-8 font-bold text-black border-b-black border-r-black border-b-2 border-r-2 rounded-tl-2xl rounded-br-2xl">
                     {item.category}
                   </div>
-                  <img src={kemeja} alt="" className="w-10/12 mx-auto py-5" />
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="w-10/12 mx-auto py-5"
+                  />
                   <div className="w-10/12 mx-auto font-bold">{item.item}</div>
                   <div className="flex w-10/12 mx-auto justify-between pt-2">
                     <div className="w-fit">
@@ -220,7 +232,7 @@ const Barang = () => {
                     {item.city}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

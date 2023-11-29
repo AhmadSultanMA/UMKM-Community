@@ -23,14 +23,16 @@ const Login = () => {
             />
             <div className="pt-2 text-xs text-gray-400">Lupa kata sandi?</div>
             <div className="w-fit mx-auto pt-10">
-              <button className="bg-cust-secondary500 text-center py-2 px-16 text-white rounded-lg">
-                Masuk
-              </button>
+              <Link to="/komunitas">
+                <button className="bg-cust-secondary500 text-center py-2 px-16 text-white rounded-lg">
+                  Masuk
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-fit mx-auto flex sm:text-sm text-xs pt-4">
             Belum punya akun?
-            <Link className="pl-2 underline text-gray-400">
+            <Link to="/register" className="pl-2 underline text-gray-400">
               Daftar sekarang
             </Link>
           </div>

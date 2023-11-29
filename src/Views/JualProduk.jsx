@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaChevronCircleLeft, FaPlusCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const JualProduk = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -75,7 +76,9 @@ const JualProduk = () => {
             onChange={handleImageChange}
           />
           <div className="mt-4 ml-auto w-fit bg-gray-300 rounded-lg">
-            <button className="font-bold px-8 py-2"> Tambah ke Katalog</button>
+            <Link to="/pemasaran">
+              <button className="font-bold px-8 py-2">Tambah ke Katalog</button>
+            </Link>
           </div>
         </div>
       </div>

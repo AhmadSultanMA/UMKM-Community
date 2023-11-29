@@ -36,14 +36,18 @@ const Register = () => {
               type="password"
             />
             <div className="w-fit mx-auto pt-10">
-              <button className="bg-cust-secondary500 text-center py-2 px-16 text-white rounded-lg">
-                Daftar
-              </button>
+              <Link to="/komunitas">
+                <button className="bg-cust-secondary500 text-center py-2 px-16 text-white rounded-lg">
+                  Daftar
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-fit mx-auto flex sm:text-sm text-xs pt-4">
             Sudah menjadi anggota?
-            <Link className="pl-2 underline text-gray-400">Masuk</Link>
+            <Link to="/login" className="pl-2 underline text-gray-400">
+              Masuk
+            </Link>
           </div>
         </div>
       </div>

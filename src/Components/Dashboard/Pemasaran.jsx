@@ -1,7 +1,12 @@
 import kemeja from "../../assets/kemejaPemasaran.svg";
+import tempe from "../../assets/tempe.svg";
+import kain from "../../assets/kain.svg";
+import tepung from "../../assets/tepung.svg";
+import { Link } from "react-router-dom";
 
 const data = [
   {
+    image: kemeja,
     category: "Fashion",
     item: "Kemeja Oversized",
     price: "Rp. 32.000",
@@ -10,6 +15,34 @@ const data = [
     city: "Surabaya, Jawa Timur",
   },
   {
+    image: tempe,
+    category: "Kuliner",
+    item: "Keripik Tempe",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: kain,
+    category: "Fashion",
+    item: "Kain Katun",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: tepung,
+    category: "Kuliner",
+    item: "Tepung Terigu",
+    price: "Rp. 32.000",
+    rprice: " Rp. 40.000",
+    dics: "20%",
+    city: "Surabaya, Jawa Timur",
+  },
+  {
+    image: kemeja,
     category: "Fashion",
     item: "Kemeja Oversized",
     price: "Rp. 32.000",
@@ -18,40 +51,9 @@ const data = [
     city: "Surabaya, Jawa Timur",
   },
   {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
-    price: "Rp. 32.000",
-    rprice: " Rp. 40.000",
-    dics: "20%",
-    city: "Surabaya, Jawa Timur",
-  },
-  {
-    category: "Fashion",
-    item: "Kemeja Oversized",
+    image: tempe,
+    category: "Kuliner",
+    item: "Keripik Tempe",
     price: "Rp. 32.000",
     rprice: " Rp. 40.000",
     dics: "20%",
@@ -82,15 +84,16 @@ const Pemasaran = () => {
         </div>
         <div className="carousel  md:carousel-center carousel-start w-full">
           {data.map((item, i) => (
-            <div className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item">
-              <div
-                className="w-10/12 mx-auto bg-gray-300 rounded-2xl shadow-lg pb-5 border-2 border-black"
-                key={i}
-              >
+            <Link
+              to="/login"
+              className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item"
+              key={i}
+            >
+              <div className="w-10/12 mx-auto bg-gray-300 rounded-2xl shadow-lg pb-5 border-2 border-black">
                 <div className="w-fit bg-cust-yellow lg:py-4 py-2 lg:px-12 px-8 font-medium text-black border-b-black border-r-black border-b-2 border-r-2 rounded-tl-2xl rounded-br-2xl">
                   {item.category}
                 </div>
-                <img src={kemeja} alt="" className="w-10/12 mx-auto py-5" />
+                <img src={item.image} alt="" className="w-10/12 mx-auto py-5" />
                 <div className="w-10/12 mx-auto font-bold">{item.item}</div>
                 <div className="flex w-10/12 mx-auto justify-between pt-2">
                   <div className="w-fit">
@@ -105,7 +108,7 @@ const Pemasaran = () => {
                 </div>
                 <div className="w-10/12 mx-auto text-sm pt-2">{item.city}</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

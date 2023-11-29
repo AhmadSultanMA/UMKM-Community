@@ -7,14 +7,14 @@ const data = [
       "Komunitas bagi para pengusaha mikro yang ingin berbagi pengalaman serta berinovasi untuk usahanya.",
   },
   {
-    header: "Usaha Mikro",
+    header: "Usaha Kecil",
     detail:
-      "Komunitas bagi para pengusaha mikro yang ingin berbagi pengalaman serta berinovasi untuk usahanya.",
+      "Komunitas bagi para pengusaha kecil yang ingin berbagi pengalaman serta berinovasi untuk usahanya.",
   },
   {
-    header: "Usaha Mikro",
+    header: "Menengah",
     detail:
-      "Komunitas bagi para pengusaha mikro yang ingin berbagi pengalaman serta berinovasi untuk usahanya.",
+      "Komunitas bagi para pengusaha menengah yang ingin berbagi pengalaman serta berinovasi untuk usahanya.",
   },
 ];
 

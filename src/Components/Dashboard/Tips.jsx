@@ -71,7 +71,7 @@ const Tips = () => {
       <div className="py-5 px-8 bg-[#D9D9D9] drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)] flex flex-col gap-3 relative rounded-2xl">
         <h2 className="underline">Kategori tips</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-5 relative">
-          <div className="absolute z-30 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 -right-12 lg:-right-14 cursor-pointer border border-cust-primary900 top-1/2 -translate-y-1/2 bg-white rounded-full">
+          <div className="md:block hidden absolute z-30 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 -right-12 lg:-right-14 cursor-pointer border border-cust-primary900 top-1/2 -translate-y-1/2 bg-white rounded-full">
             <img src={chevron} className="w-full -rotate-90" alt="icon" />
           </div>
           <div className="w-full relative">
