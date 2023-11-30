@@ -50,7 +50,7 @@ const data = [
 const Acara = () => {
   return (
     <>
-      <div className="lg:h-screen lg:pb-0 pb-10 bg-gradient-to-b from-cust-secondary200 from-10% via-cust-secondary100 via-20% to-cust-secondary200 to-90% font-poppins">
+      <div className="lg:pb-0 pb-10 bg-gradient-to-b from-cust-secondary200 from-10% via-cust-secondary100 via-20% to-cust-secondary200 to-90% font-poppins">
         <div className="md:w-fit w-10/12 mx-auto md:text-4xl sm:text-3xl text-2xl font-bold text-black pt-20">
           Acara
         </div>
