@@ -89,8 +89,8 @@ const Pemasaran = () => {
               className="xl:w-3/12 lg:w-4/12 mx-auto carousel-item"
               key={i}
             >
-              <div className="w-10/12 mx-auto bg-gray-300 rounded-2xl shadow-lg pb-5 border-2 border-black">
-                <div className="w-fit bg-cust-yellow lg:py-4 py-2 lg:px-12 px-8 font-medium text-black border-b-black border-r-black border-b-2 border-r-2 rounded-tl-2xl rounded-br-2xl">
+              <div className="w-10/12 mx-auto bg-white rounded-2xl shadow-lg pb-5 border-2 border-black">
+                <div className="w-fit bg-cust-primary700 lg:py-4 py-2 lg:px-12 px-8 font-medium text-white border-b-black border-r-black border-b-2 border-r-2 rounded-tl-xl rounded-br-2xl">
                   {item.category}
                 </div>
                 <img src={item.image} alt="" className="w-10/12 mx-auto py-5" />
@@ -102,7 +102,7 @@ const Pemasaran = () => {
                       <strike>{item.rprice}</strike>
                     </div>
                   </div>
-                  <div className="px-6 py-2 w-fit h-fit bg-gray-600 text-white text-sm rounded-full">
+                  <div className="px-6 py-2 w-fit h-fit bg-cust-primary400 text-white text-sm rounded-full">
                     {item.dics}
                   </div>
                 </div>

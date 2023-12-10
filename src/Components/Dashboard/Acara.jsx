@@ -73,7 +73,7 @@ const Acara = () => {
               className="xl:w-3/12 lg:w-4/12 w-[300px] mx-auto carousel-item py-2"
               key={i}
             >
-              <div className="w-10/12 mx-auto bg-gray-300 p-3 rounded-2xl shadow-lg">
+              <div className="w-10/12 mx-auto bg-white p-3 rounded-2xl shadow-lg">
                 <img
                   src={index.image}
                   alt="missing"

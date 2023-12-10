@@ -21,7 +21,7 @@ const Tips = () => {
           </div>
         </div>
         <div className="col-span-1 lg:col-span-8">
-          <div className="rounded-2xl p-5 bg-[#D9D9D9] flex flex-col gap-5 drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)]">
+          <div className="rounded-2xl p-5 bg-white flex flex-col gap-5 drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)]">
             <h2 className="underline font-bold">Tips Terpopuler</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-10">
               <div className="flex gap-3 col-span-1">
@@ -68,8 +68,8 @@ const Tips = () => {
           </div>
         </div>
       </div>
-      <div className="py-5 px-8 bg-[#D9D9D9] drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)] flex flex-col gap-3 relative rounded-2xl">
-        <h2 className="underline">Kategori tips</h2>
+      <div className="py-5 px-8 bg-white drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)] flex flex-col gap-3 relative rounded-2xl">
+        <h2 className="underline font-bold">Kategori tips</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-5 relative">
           <div className="md:block hidden absolute z-30 w-8 md:w-10 lg:w-12 h-8 md:h-10 lg:h-12 -right-12 lg:-right-14 cursor-pointer border border-cust-primary900 top-1/2 -translate-y-1/2 bg-white rounded-full">
             <img src={chevron} className="w-full -rotate-90" alt="icon" />
